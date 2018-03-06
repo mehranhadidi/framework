@@ -8,12 +8,21 @@ class ComposerStaticInit4f3864ac2e6cc0b966a3297a3a2d0c1e
 {
     public static $files = array (
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'Z' => 
         array (
             'Zend\\Diactoros\\' => 15,
+        ),
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
         ),
         'P' => 
         array (
@@ -47,6 +56,14 @@ class ComposerStaticInit4f3864ac2e6cc0b966a3297a3a2d0c1e
         'Zend\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-diactoros/src',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -82,11 +99,22 @@ class ComposerStaticInit4f3864ac2e6cc0b966a3297a3a2d0c1e
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit4f3864ac2e6cc0b966a3297a3a2d0c1e::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit4f3864ac2e6cc0b966a3297a3a2d0c1e::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit4f3864ac2e6cc0b966a3297a3a2d0c1e::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

@@ -1,7 +1,3 @@
 <?php
 
-$route->get('/', function ($request, $response) {
-    $response->getBody()->write("Homepage");
-
-    return $response;
-});
+$route->get('/', 'App\\Controllers\\HomeController::index');
