@@ -16,7 +16,10 @@ class HomeController
     public function index($request, $response)
     {
         return $this->view->render($response, 'home.twig', [
-            'fullname' => 'Mehran Hadidi',
+            'user' => [
+                'name' => 'Mehran Hadidi',
+                'email' => 'mehran.hadidi@gmail.com',
+            ],
         ]);
     }
 }
