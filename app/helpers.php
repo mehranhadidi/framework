@@ -25,7 +25,7 @@ if(!function_exists('env')) {
                 return true;
             case $value === 'false':
                 return false;
-            case $default:
+            default:
                 return $value;
         }
     }
