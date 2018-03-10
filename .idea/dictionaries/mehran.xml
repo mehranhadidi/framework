@@ -2,6 +2,7 @@
   <dictionary name="mehran">
     <words>
       <w>dotenv</w>
+      <w>nullable</w>
     </words>
   </dictionary>
 </component>
