@@ -1,8 +1,10 @@
 <component name="ProjectDictionaryState">
   <dictionary name="mehran">
     <words>
+      <w>bcrypt</w>
       <w>dbname</w>
       <w>dotenv</w>
+      <w>hasher</w>
       <w>navbar</w>
       <w>nullable</w>
       <w>signin</w>

@@ -25,12 +25,12 @@ class Handler
             return $this->{$method}($this->exception);
         }
 
-        $this->unhandledException();
+        $this->unhandledException($this->exception);
     }
 
     protected function unhandledException(Exception $exception)
     {
-        throw $exception;
+        throw new $exception;
     }
 
     protected function handleValidationException(ValidationException $exception)

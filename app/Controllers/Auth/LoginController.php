@@ -2,16 +2,19 @@
 
 namespace App\Controllers\Auth;
 
+use App\Auth\Hashing\Hasher;
 use App\Controllers\Controller;
 use App\Views\View;
 
 class LoginController extends Controller
 {
     protected $view;
+    protected $hasher;
 
-    public function __construct(View $view)
+    public function __construct(View $view, Hasher $hasher)
     {
         $this->view = $view;
+        $this->hasher = $hasher;
     }
 
     public function index($request, $response)
