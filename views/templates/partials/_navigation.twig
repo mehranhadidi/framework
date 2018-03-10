@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">{{ config.get('app.name') }}</a>
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+        </ul>
+        <ul class="navbar-nav">
+            {% if false %}
+                <li><a class="nav-link" href="#">Mehran Hadidi</a></li>
+                <li><a class="nav-link" href="#">Sign out</a></li>
+            {% else %}
+                <li><a class="nav-link" href="#">Sign in</a></li>
+                <li><a class="nav-link" href="#">Create new account</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
