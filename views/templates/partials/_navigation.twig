@@ -10,7 +10,7 @@
 
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
         </ul>
         <ul class="navbar-nav">
@@ -18,7 +18,7 @@
                 <li><a class="nav-link" href="#">Mehran Hadidi</a></li>
                 <li><a class="nav-link" href="#">Sign out</a></li>
             {% else %}
-                <li><a class="nav-link" href="#">Sign in</a></li>
+                <li><a class="nav-link" href="{{ route('auth.login') }}">Sign in</a></li>
                 <li><a class="nav-link" href="#">Create new account</a></li>
             {% endif %}
         </ul>
