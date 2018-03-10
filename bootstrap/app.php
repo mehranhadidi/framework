@@ -5,7 +5,7 @@
  */
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+error_reporting(E_ALL ^ E_NOTICE);
 
 /**
  * Session
@@ -33,8 +33,18 @@ require_once base_path('bootstrap/container.php');
  */
 $route = $container->get(\League\Route\RouteCollection::class);
 
+require_once base_path('bootstrap/middleware.php');
 require_once base_path('routes/web.php');
 
-$response = $route->dispatch(
-    $container->get('request'), $container->get('response')
-);
+try {
+    $response = $route->dispatch(
+        $container->get('request'), $container->get('response')
+    );
+} catch (Exception $exception) {
+    $handler = new \App\Exceptions\Handler(
+        $exception,
+        $container->get(\App\Session\SessionStore::class)
+    );
+
+    $response = $handler->respond();
+}
