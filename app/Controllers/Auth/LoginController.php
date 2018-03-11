@@ -2,19 +2,19 @@
 
 namespace App\Controllers\Auth;
 
-use App\Auth\Hashing\Hasher;
+use App\Auth\Auth;
 use App\Controllers\Controller;
 use App\Views\View;
 
 class LoginController extends Controller
 {
     protected $view;
-    protected $hasher;
+    protected $auth;
 
-    public function __construct(View $view, Hasher $hasher)
+    public function __construct(View $view, Auth $auth)
     {
         $this->view = $view;
-        $this->hasher = $hasher;
+        $this->auth = $auth;
     }
 
     public function index($request, $response)
@@ -24,9 +24,20 @@ class LoginController extends Controller
 
     public function signin($request, $response)
     {
-        $this->validate($request, [
+        $data = $this->validate($request, [
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
+
+        $attempt = $this->auth->attempt(
+            $data['email'],$data['password']
+        );
+
+        if(! $attempt) {
+            dump('failed');
+            die();
+        }
+
+        return redirect('/');
     }
 }
