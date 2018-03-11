@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="787dfa9e-cd26-40da-bb74-028b6045e634" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/Auth/Auth.php" afterPath="$PROJECT_DIR$/app/Auth/Auth.php" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/Auth/LoginController.php" afterPath="$PROJECT_DIR$/app/Controllers/Auth/LoginController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Model.php" afterPath="$PROJECT_DIR$/app/Models/Model.php" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" afterPath="$PROJECT_DIR$/app/helpers.php" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Controllers/HomeController.php" />
       <change beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change beforePath="$PROJECT_DIR$/views/home.twig" afterPath="$PROJECT_DIR$/views/home.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,32 +19,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Controllers/Auth/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#58#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Auth/Auth.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="e#28#56#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,8 +35,6 @@
         <option value="$PROJECT_DIR$/bootstrap/container.php" />
         <option value="$PROJECT_DIR$/app/Providers/DatabaseServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
-        <option value="$PROJECT_DIR$/app/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/views/home.twig" />
         <option value="$PROJECT_DIR$/app/Exceptions/ValidationException.php" />
         <option value="$PROJECT_DIR$/app/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/app/Session/SessionStore.php" />
@@ -94,12 +67,15 @@
         <option value="$PROJECT_DIR$/app/Providers/HashServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/app/Auth/Hashing/BcryptHasher.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Models/Model.php" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Auth/Auth.php" />
         <option value="$PROJECT_DIR$/app/helpers.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Middleware/Authenticate.php" />
+        <option value="$PROJECT_DIR$/app/Auth/Auth.php" />
         <option value="$PROJECT_DIR$/app/Controllers/Auth/LoginController.php" />
+        <option value="$PROJECT_DIR$/app/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/views/home.twig" />
       </list>
     </option>
   </component>
@@ -212,43 +188,19 @@
               <item name="framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Extensions" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="league" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="league" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="route" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="framework" type="b2602c69:ProjectViewProjectNode" />
@@ -270,8 +222,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Providers" />
       <recent name="$PROJECT_DIR$/app/Middleware" />
+      <recent name="$PROJECT_DIR$/app/Providers" />
       <recent name="$PROJECT_DIR$/views/auth" />
       <recent name="$PROJECT_DIR$/app/Controllers/Auth" />
       <recent name="$PROJECT_DIR$/config" />
@@ -316,18 +268,17 @@
       <workItem from="1520416433460" duration="188000" />
       <workItem from="1520418903507" duration="11951000" />
       <workItem from="1520667135236" duration="19358000" />
-      <workItem from="1520749561367" duration="3819000" />
+      <workItem from="1520749561367" duration="7437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47880000" />
+    <option name="totallyTimeSpent" value="51498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1867" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28336078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28336078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -360,13 +311,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/league/route/src/RouteGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -453,6 +397,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <marker date="1520681867775" expanded="false" signature="34:63" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -522,13 +469,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/Extentions/PathExtension.php" />
     <entry file="file://$PROJECT_DIR$/app/Views/Extensions/PathExtention.php" />
-    <entry file="file://$PROJECT_DIR$/views/home.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/templates/app.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
@@ -587,29 +527,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1520670925944" expanded="false" signature="35:54" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,16 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Auth/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#28#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -738,13 +650,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#35#53#0#PHP" expanded="true" />
+            <marker date="1520769463569" expanded="false" signature="54:73" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="e#34#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Auth/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="416">
+          <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="54" />
           <folding>
             <element signature="e#40#58#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

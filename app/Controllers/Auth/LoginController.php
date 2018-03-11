@@ -34,8 +34,7 @@ class LoginController extends Controller
         );
 
         if(! $attempt) {
-            dump('failed');
-            die();
+            dd('failed');
         }
 
         return redirect('/');
