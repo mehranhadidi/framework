@@ -14,7 +14,6 @@
     "twig/twig": "^2.0",
     "symfony/var-dumper": "^4.0",
     "doctrine/orm": "^2.6",
-    "vlucas/valitron": "^1.4",
-    "pusher/pusher-php-server": "^3.0"
+    "vlucas/valitron": "^1.4"
   }
 }

@@ -32,7 +32,6 @@ class ComposerStaticInit4f3864ac2e6cc0b966a3297a3a2d0c1e
         ),
         'P' => 
         array (
-            'Pusher\\' => 7,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
         ),
@@ -89,10 +88,6 @@ class ComposerStaticInit4f3864ac2e6cc0b966a3297a3a2d0c1e
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
-        ),
-        'Pusher\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/pusher/pusher-php-server/src',
         ),
         'Psr\\Http\\Message\\' => 
         array (
