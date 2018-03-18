@@ -8,18 +8,14 @@ use App\Views\View;
 class HomeController
 {
     protected $view;
-    protected $auth;
 
-    public function __construct(View $view, Auth $auth)
+    public function __construct(View $view)
     {
         $this->view = $view;
-        $this->auth = $auth;
     }
 
     public function index($request, $response)
     {
-        return $this->view->render($response, 'home.twig', [
-            'user' => $this->auth->user()
-        ]);
+        return $this->view->render($response, 'home.twig');
     }
 }

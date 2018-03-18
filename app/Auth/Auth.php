@@ -52,14 +52,37 @@ class Auth
             return false;
         }
 
+        if($this->needsRehash($user)) {
+            $this->rehash($user, $password);
+        }
+
         $this->setUserSession($user);
 
         return true;
     }
 
+    public function needsRehash($user)
+    {
+        return $this->hasher->needsRehash($user->password);
+    }
+
+    public function rehash($user, $password)
+    {
+        $this->db->getRepository(User::class)->find($user->id)->update([
+            'password' => $this->hasher->create($password),
+        ]);
+
+        $this->db->flush();
+    }
+
     protected function setUserSession($user)
     {
         $this->session->set('id', $user->id);
+    }
+
+    public function check()
+    {
+        return $this->hasUserInSession();
     }
 
     public function hasUserInSession()
